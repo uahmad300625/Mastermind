@@ -8,8 +8,8 @@ The program secretly chooses six distinct colors from a set of ten. The player t
 
 After each guess, the program gives feedback:
 
-Black peg — a color is correct and in the correct position
-Silver peg — a color is correct but in the wrong position
+- **Black peg** — a color is correct and in the correct position
+- **Silver peg** — a color is correct but in the wrong position
 
 Example: if the program selected green, red, blue, white, orange, purple and the player guessed cyan, yellow, blue, orange, violet, red, the feedback would be black, silver, silver.
 
@@ -18,7 +18,7 @@ The player wins by guessing all six colors in the correct positions within 20 at
 ## Tech Stack
 - **Python**
 - **Tkinter** - GUI
-- **unittest** - test suite, writtien using TDD
+- **unittest** - test suite, written using TDD
 
 ## Lessons Learned
 ### What did you learn mainly in this project?
