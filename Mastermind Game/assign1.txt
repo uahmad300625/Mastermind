@@ -1,0 +1,40 @@
+
+1. What did you learn mainly in this assignment?
+
+The thing we learned mainly in this assignment was how to unit test and why it is so beneficial to developing applications. 
+It was tricky at first, writing the test and then implementing a minimal working solution. But as we wrote more tests, the function naturally grew into what we wanted it to be.
+Additionally, it really helped that after making changes we could still see that the updated code still behaved how we wanted it to since it passed all of the tests.
+That gave us confidence to be able to progress and not be afraid to make changes if they were needed.
+We also learned how to use different types of asserts to get better results for our tests.
+
+Another thing we learned was how to create a GUI in Python using Tkinter.
+Me and my partner had never done it before so it was interesting to see how we could link the logic of master_mind.py code into something the user interacts with that is not the terminal.
+We learned how to align and create a nice-looking GUI properly.
+In addition, we learned how to use functions with buttons and the special conditions to use those.
+
+2. How is the current design different, if at all, from the strategic design created in hw2?
+
+So our initial strategic design had a MasterMind class and a GUI class. 
+
+While creating the MasterMind class, we realized that it wasn't absolutely necessary to create it.
+Instead, the master_mind.py file has functions related to the game and then some Enum Classes to help ease the cognitive load and to not hard code certain things.
+For instance, instead of worrying about what an exact match represents at a logical level, we used an Enum Class to mark it as an Exact Match.
+Then at the UI level, we displayed what an exact match actually represents.
+
+For the GUI, based on time constraints and lack of proper knowledge on how to do so, we didn't make the GUI using classes.
+Instead, we used a handful of functions that could be initiated through the button objects from Tkinter. 
+
+
+
+3. Were there any surprises or things you did not expect along the way? Any particular problem faced, things you had to tackle that you did not expect beforehand?
+
+One surprise was the "Radon found complex code" message in the CI build. 
+Although we knew that code quality was going to be checked, it was surprising to see that our code was also being checked for complexity automatically.
+Because of this, we had to rewrite our some of our functions to pass that check.
+It did however, result in better code and forced us to be mindful of what exactly we were writing.
+
+Another surprise that had to be dealt with was passing values to functions called by code.
+In their normal form functions when assigned to a function can't pass a value to that function.
+As a result, you need to use lambda functions for it but, this raised another problem when lambda was in a loop.
+By the time the lambda ran in the loop, it would only have the last index value of the loop.
+To fix this you need to set the index value to another variable. 
