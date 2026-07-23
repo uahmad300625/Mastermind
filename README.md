@@ -1,21 +1,23 @@
-# Mastermind
-Program that simulates the Mastermind board game 
+Mastermind Game
 
-The object of the game is for the user to guess the colors the program has chosen. The program chooses six distinct colors from among ten colors. The user obviously does not know the colors the program has chosen.
+A GUI-based implementation of the classic Mastermind code-breaking game, built in Python with Tkinter. Developed using Test-Driven Development.
 
-The operations user can perform and the outcome:
+How to Play
 
-User picks six colors:
-The program displays a color code back to indicate the progress the user has made. 
+The program secretly chooses six distinct colors from a set of ten. The player tries to guess the exact colors and positions.
 
-If the user guessed the exact color combination, including the positions, the result is six black colors. The game ends now with a message that the user has won and the program reveals the color selected.
+After each guess, the program gives feedback:
 
-If the user guessed only some colors, then the result has as many black colors as the number of direct positions matches and as many silver colors for each match that is in an incorrect position.
+Black peg — a color is correct and in the correct position
+Silver peg — a color is correct but in the wrong position
 
-For example, if the program selected green, red, blue, white, orange, purple, and the user entered cyan, yellow, blue, orange, violet, red, then the program will display black, silver, silver.
+Example: if the program selected green, red, blue, white, orange, purple and the player guessed cyan, yellow, blue, orange, violet, red, the feedback would be black, silver, silver.
 
-User gives up: 
-The program displays the colors selected, game ends with a message the user has lost.
+The player wins by guessing all six colors in the correct positions within 20 attempts. The player can also give up at any time, at which point the program reveals the answer.
 
-User has made 20 tries:
-The program displays the colors selected, game ends with a message the user has lost (unless in the last try the user found the combination).
+Tech Stack
+Python
+Tkinter — GUI
+unittest — test suite, written using TDD
+
+
