@@ -12,7 +12,7 @@ Me and my partner had never done it before so it was interesting to see how we c
 We learned how to align and create a nice-looking GUI properly.
 In addition, we learned how to use functions with buttons and the special conditions to use those.
 
-2. How is the current design different, if at all, from the strategic design created in hw2?
+2. How is the current design different, if at all, from the strategic design created?
 
 So our initial strategic design had a MasterMind class and a GUI class. 
 
