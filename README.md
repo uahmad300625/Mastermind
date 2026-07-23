@@ -15,7 +15,7 @@ Example: if the program selected green, red, blue, white, orange, purple and the
 
 The player wins by guessing all six colors in the correct positions within 20 attempts. The player can also give up at any time, at which point the program reveals the answer.
 
-Tech Stack
+Tech Stack:
 Python
 Tkinter — GUI
 unittest — test suite, written using TDD
