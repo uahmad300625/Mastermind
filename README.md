@@ -1,6 +1,6 @@
 # Mastermind Game
 
-A GUI-based implementation of the classic Mastermind code-breaking game, built in Python with Tkinter. Developed using Test-Driven Development.
+A GUI-based implementation of the classic Mastermind code-breaking game, built with Python and Tkinter through pair programming and Test-Driven Development
 
 How to Play
 
